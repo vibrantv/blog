@@ -1,0 +1,22 @@
+baseURL = "https://vibrantv.github.io/"
+languageCode = "en-us"
+title = "vibrantv's blog"
+theme = "maro"
+
+disableKinds = [ "taxonomy", "taxonomyTerm", "section" ]
+
+[params]
+description = "a blog for the internet of buzzing things"
+footer = "CC0"
+
+[params.nav.github]
+name="github"
+href="#path_to_profile"
+
+[params.nav.feed]
+name="feed"
+href="/index.xml"
+
+[params.nav.home]
+name="home"
+href="/"

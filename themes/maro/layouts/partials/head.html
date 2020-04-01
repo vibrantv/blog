@@ -1,0 +1,7 @@
+<head >
+<meta charset="UTF-8">
+{{ with .Description -}}<meta name="description" content="{{ . }}">{{- end -}}
+{{ with .OutputFormats.Get "rss" -}}{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}{{ end }}
+<link rel="stylesheet" href="/css/main.css" />
+<title>{{ .Title }}</title>
+</head>
